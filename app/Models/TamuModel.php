@@ -33,23 +33,23 @@ class TamuModel extends Model
         'email'   => 'required|valid_email|max_length[255]',
         'pesan' => 'required|max_length[1000]',
     ];
-    // protected $validationMessages   = [
-    //     'nama' => [
-    //         'required'    => 'Nama wajib diisi.',
-    //         'alpha_space' => 'Nama hanya boleh mengandung huruf dan spasi.',
-    //         'min_length'  => 'Nama minimal {param} karakter.',
-    //         'max_length'  => 'Nama maksimal {param} karakter.',
-    //     ],
-    //     'email' => [
-    //         'required'    => 'Email wajib diisi.',
-    //         'valid_email' => 'Format email tidak valid.',
-    //         'max_length'  => 'Email maksimal {param} karakter.',
-    //     ],
-    //     'pesan' => [
-    //         'required'    => 'Pesan wajib diisi.',
-    //         'max_length'  => 'Pesan maksimal {param} karakter.',
-    //     ],
-    // ];
+    protected $validationMessages   = [
+        'nama' => [
+            'required'    => 'Nama wajib diisi.',
+            'alpha_space' => 'Nama hanya boleh mengandung huruf dan spasi.',
+            'min_length'  => 'Nama minimal {param} karakter.',
+            'max_length'  => 'Nama maksimal {param} karakter.',
+        ],
+        'email' => [
+            'required'    => 'Email wajib diisi.',
+            'valid_email' => 'Format email tidak valid.',
+            'max_length'  => 'Email maksimal {param} karakter.',
+        ],
+        'pesan' => [
+            'required'    => 'Pesan wajib diisi.',
+            'max_length'  => 'Pesan maksimal {param} karakter.',
+        ],
+    ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
